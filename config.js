@@ -11,7 +11,7 @@ if (production) {
   var cfEnv = require("cf-env");
   var pkg   = require("./package.json");
   var cfCore = cfEnv.getCore({name: pkg.name});
-  var sqlCredentials = cfEnv.getService("ghost-pg").credentials;
+  var sqlCredentials = cfEnv.getService("ghost-mysql").credentials;
   var mailCredentials = cfEnv.getService("ghost-mail").credentials;
 }
 
